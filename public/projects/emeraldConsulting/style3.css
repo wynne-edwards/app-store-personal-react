@@ -1,0 +1,891 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap");
+.containerContainer {
+  justify-content: center;
+  position: relative;
+  left: 50%;
+}
+
+.whatWeDo {
+  font-size: 60px;
+  font-family: "Source Sans Pro";
+  font-weight: 600;
+  color: rgb(33, 111, 61);
+  text-transform: uppercase;
+  position: relative;
+}
+
+.whatDesc {
+  font-size: 30px;
+  color: dimgrey;
+  position: relative;
+  display: flex;
+}
+
+.textWhat {
+  height: 500px;
+  width: 550px;
+  padding-top: 300px;
+  left: 23%;
+  position: relative;
+  top: 100px;
+}
+
+.diamondWhat {
+  position: relative;
+  display: flex;
+  height: 500px;
+  width: 500px;
+  left: 70%;
+  top: -505px;
+}
+
+.diamondShape {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+  filter: drop-shadow(5px 10px 5px rgba(0, 0, 0, 0.5));
+}
+
+.partnerBox {
+  position: relative;
+  display: inline-flex;
+  top: 110px;
+  left: 30%;
+}
+
+.pHeading1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: grey;
+}
+
+.pHeading2 {
+  font-size: 20px;
+  color: grey;
+}
+
+.boxHeading {
+  font-size: 16px;
+  color: grey;
+  justify-content: center;
+  display: flex;
+}
+
+.partnersContainer {
+  position: relative;
+  top: 300px;
+  height: 500px;
+}
+
+.headingContainer {
+  height: 150px;
+  position: relative;
+  left: 26%;
+  top: 100px;
+  width: 1000px;
+}
+
+.pBox {
+  position: relative;
+  height: 250px;
+  width: 300px;
+}
+
+.aboutContainter {
+  height: 1100px;
+}
+
+.pHidden {
+  background-color: rgb(33, 111, 61);
+  color: white;
+  position: absolute;
+  font-family: "Source Sans Pro";
+  height: 250px;
+  width: 300px;
+  display: block;
+  opacity: 0;
+  z-index: 1;
+}
+
+.pHiddenH {
+  font-size: 23px;
+  font-weight: 500;
+  font-weight: "Sans";
+  text-transform: uppercase;
+  justify-content: center;
+  position: relative;
+  top: -60px;
+  left: 50px;
+  width: 200px;
+}
+
+.pHiddenT1 {
+  font-size: 13px;
+  position: relative;
+  top: -150px;
+  left: 50px;
+  width: 200px;
+}
+
+.pHiddenT2 {
+  position: relative;
+  top: -110px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#pHiddenT2r2 {
+  top: -125px;
+}
+
+#pHiddenT2dth {
+  top: -115px;
+}
+
+.pBox:hover .pHidden {
+  display: block;
+  -webkit-animation: fadeinout 1s linear forwards;
+  animation: fadeinout 1s linear forwards;
+}
+.pBox:hover .pHiddenH {
+  display: block;
+  top: 60px;
+  transition: 0.5s;
+}
+.pBox:hover .pHiddenT1 {
+  display: block;
+  top: 80px;
+  transition: 0.5s;
+}
+.pBox:hover .pHiddenT2 {
+  display: block;
+  top: 110px;
+  transition: 0.5s;
+}
+.pBox:hover #pHiddenT2r2 {
+  display: block;
+  top: 100px;
+  transition: 0.5s;
+}
+.pBox:hover #pHiddenT2dth {
+  display: block;
+  top: 105px;
+  transition: 0.5s;
+}
+
+.transition {
+  transition: 0.3s;
+}
+
+@-webkit-keyframes fadeinout {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+@keyframes fadeinout {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+#clientD {
+  background: rgb(200, 230, 215);
+}
+
+#finD {
+  margin-left: 135px;
+  margin-top: 135px;
+  background: rgb(155, 213, 181);
+  box-shadow: 10px 10px 10px white;
+}
+
+#matterD {
+  margin-top: 270px;
+  background: rgb(90, 190, 139);
+  box-shadow: 0 9px 10px 0px white, 0 -3px 10px 0px white;
+}
+
+#riskD {
+  margin-left: -135px;
+  margin-top: 135px;
+  background: rgb(54, 120, 84);
+}
+
+.logoContainer {
+  position: flex;
+  display: inline-flex;
+  width: 1000px;
+}
+
+.logoContainer li {
+  list-style: none;
+}
+
+.linkContainer {
+  display: inline-flex;
+}
+
+.navigation {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  left: 5%;
+  z-index: 99;
+  background-color: white;
+  transition: 0.4s;
+  color: dimgrey;
+}
+
+.navLinks {
+  font-family: "Nunito";
+  font-size: 15px;
+  padding-left: 50px;
+  padding-top: 35px;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.mobileNav {
+  display: none;
+}
+
+#logo {
+  position: flex;
+  justify-content: left;
+  padding-top: 20px;
+  transition: 0.4s;
+}
+
+.frame {
+  position: absolute;
+  top: 1200px;
+  left: 50%;
+  color: dimgrey;
+  font-family: "Source Sans Pro";
+  transform: scale(0.9);
+}
+
+.frameContainer {
+  width: 1375px;
+  height: 700px;
+  margin-bottom: 100px;
+}
+
+.center {
+  position: relative;
+  left: 50%;
+  top: 30px;
+  transform: scale(2.5);
+}
+
+.descText {
+  font-size: 15px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+#ci {
+  padding: 225px 150px 0 0px;
+  margin-left: -25px;
+  text-align: center;
+}
+
+#yof {
+  text-align: center;
+  margin: -30px 0 0 0;
+}
+
+#cot {
+  text-align: center;
+  margin: -40px 0 0 0;
+}
+
+.headline-1 {
+  position: absolute;
+  width: 300px;
+  height: auto;
+  font-size: 20px;
+  font-weight: 300;
+  margin-left: -4px;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+
+.headline-2 {
+  position: absolute;
+  margin-top: 49px;
+  margin-left: -45px;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.offeringsContainer {
+  height: 700px;
+}
+
+.headingsComplete {
+  position: relative;
+  left: 250px;
+}
+
+.rcmfContainers {
+  position: relative;
+  left: 180px;
+  height: 650px;
+}
+
+.circle-big .bg,
+.circle-small .bg,
+.circle-small-2 .bg {
+  fill: none;
+  stroke: rgb(235, 232, 229);
+  stroke-width: 5px;
+}
+
+.circle-big .progress,
+.circle-small .progress,
+.circle-small-2 .progress {
+  fill: none;
+  stroke-width: 5px;
+  stroke: rgb(54, 120, 84);
+  stroke-opacity: 0.9;
+  stroke-linecap: round;
+  transform-origin: 50% 50%;
+}
+
+.circle-big,
+.circle-small,
+.circle-small-2 {
+  position: absolute;
+  top: 100px;
+  left: -20px;
+}
+
+.circle-big .text,
+.circle-small .text,
+.circle-small-2 .text {
+  position: absolute;
+  padding-top: 10px;
+  left: 42px;
+  font-family: "Source Sans Pro";
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.circle-big .text p,
+.circle-small .text p,
+.circle-small-2 .text p {
+  position: relative;
+  left: 20px;
+  color: #648192;
+  font-size: 15px;
+  top: -13px;
+  font-weight: 400;
+}
+
+.circle-big,
+.circle-small,
+.circle-small-2 {
+  width: 115px;
+  height: 115px;
+  position: absolute;
+}
+
+.circle-small {
+  top: 100px;
+  left: -200px;
+}
+
+.circle-small-2 {
+  top: 100px;
+  left: 150px;
+}
+
+.circle-small .text {
+  font-size: 20px;
+  top: 33px;
+  left: 45px;
+}
+
+.circle-small .text p {
+  left: 3px;
+  top: -18px;
+}
+
+.circle-small-2 .text {
+  left: 35px;
+  top: 33px;
+  font-size: 20px;
+}
+
+.circle-small-2 .text p {
+  top: -18px;
+  left: 6px;
+}
+
+.circle-big .text {
+  top: 30px;
+}
+
+.circle-big .text p {
+  top: -16px;
+}
+
+.circle-small .progress {
+  stroke: rgb(54, 120, 84);
+  stroke-width: 5px;
+  -webkit-animation: circle-small 2s ease-in-out;
+          animation: circle-small 2s ease-in-out;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.circle-small .bg {
+  stroke-width: 5px;
+}
+
+.circle-small-2 .progress {
+  stroke: rgb(54, 120, 84);
+  stroke-width: 5px;
+  -webkit-animation: circle-small-2 2s ease-in-out;
+          animation: circle-small-2 2s ease-in-out;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.circle-small-2 .bg {
+  stroke-width: 5px;
+}
+
+.circle-big .progress {
+  stroke: rgb(54, 120, 84);
+  -webkit-animation: circle-big 2s ease-in-out;
+          animation: circle-big 2s ease-in-out;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes circle-big {
+  0% {
+    stroke-dasharray: 0 326.5px;
+    stroke-dashoffset: 77px;
+  }
+  100% {
+    stroke-dasharray: 200px 126.5px;
+    stroke-dashoffset: 77px;
+  }
+}
+
+@keyframes circle-big {
+  0% {
+    stroke-dasharray: 0 326.5px;
+    stroke-dashoffset: 77px;
+  }
+  100% {
+    stroke-dasharray: 200px 126.5px;
+    stroke-dashoffset: 77px;
+  }
+}
+@-webkit-keyframes circle-small-2 {
+  0% {
+    stroke-dasharray: 0px 0px;
+    stroke-dashoffset: 20px;
+  }
+  100% {
+    stroke-dasharray: 200px 0px;
+    stroke-dashoffset: 20px;
+  }
+}
+@keyframes circle-small-2 {
+  0% {
+    stroke-dasharray: 0px 0px;
+    stroke-dashoffset: 20px;
+  }
+  100% {
+    stroke-dasharray: 200px 0px;
+    stroke-dashoffset: 20px;
+  }
+}
+@-webkit-keyframes circle-small {
+  0% {
+    stroke-dasharray: 20px 150.3px;
+    stroke-dashoffset: 55px;
+  }
+  100% {
+    stroke-dasharray: 200px 150.3px;
+    stroke-dashoffset: 110px;
+  }
+}
+@keyframes circle-small {
+  0% {
+    stroke-dasharray: 20px 150.3px;
+    stroke-dashoffset: 55px;
+  }
+  100% {
+    stroke-dasharray: 200px 150.3px;
+    stroke-dashoffset: 110px;
+  }
+}
+.offeringsContainer {
+  position: relative;
+  top: 200px;
+}
+
+#heading2 {
+  position: relative;
+  display: flex;
+  left: 200px;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: grey;
+}
+
+#heading3 {
+  position: relative;
+  display: flex;
+  left: 400px;
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: grey;
+}
+
+.iconsOptions {
+  position: relative;
+  transform: scale(1.5);
+  color: rgb(33, 111, 61);
+  top: 40px;
+}
+
+.boxButton {
+  background: rgb(33, 111, 61);
+  color: white;
+  height: 25px;
+  width: 100px;
+  text-align: center;
+  margin-left: 170px;
+}
+
+.boxButton:hover {
+  background-color: darkslategrey;
+}
+
+.box {
+  width: 300px;
+  height: 242px;
+  left: 50%;
+  position: relative;
+}
+
+.headers {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Source Sans Pro";
+  color: rgb(33, 111, 61);
+}
+
+.text {
+  font-size: 20px;
+}
+
+#riskBox {
+  top: 100px;
+  left: 700px;
+}
+
+#clientBox {
+  left: 1100px;
+  top: -150px;
+}
+
+#finBox {
+  left: 700px;
+  top: -100px;
+}
+
+#matterBox {
+  left: 1100px;
+  top: -350px;
+}
+
+hr.solid {
+  position: relative;
+  border-top: 3px solid #bbb;
+  width: 1100px;
+  left: 22%;
+}
+
+.box .text {
+  color: grey;
+}
+
+.feedbackContainer {
+  position: relative;
+  top: 500px;
+  height: 400px;
+}
+
+#partnersBreak {
+  top: 400px;
+}
+
+.qouteLogoIcon {
+  position: relative;
+  color: white;
+  top: -75px;
+  left: 52%;
+}
+
+.feedbackH1 {
+  font-size: 45px;
+  position: relative;
+  font-weight: 600;
+  left: 40%;
+  font-family: "Source Sans Pro";
+  text-transform: uppercase;
+  color: rgb(33, 111, 61);
+}
+
+.feedbackH2 {
+  font-size: 30px;
+  position: relative;
+  font-weight: 300;
+  left: 50%;
+  font-family: "Source Sans Pro";
+  text-transform: uppercase;
+  color: rgb(33, 111, 61);
+}
+
+.dot {
+  height: 90px;
+  width: 90px;
+  background-color: rgb(33, 111, 61);
+  border-radius: 50%;
+  left: 51%;
+  position: relative;
+  display: inline-block;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .feedbackContainer {
+    display: none;
+  }
+  #partnersBreak {
+    top: 950px;
+  }
+  .center {
+    left: -250px;
+    top: -100px;
+  }
+  .frameContainer {
+    height: 0;
+  }
+  .offeringsContainer {
+    top: 0;
+  }
+  .boxButton {
+    position: relative;
+    top: 20px;
+  }
+  .box .headers {
+    position: relative;
+    top: -5px;
+    left: -30px;
+  }
+  .box .text {
+    position: relative;
+    font-size: 22px;
+    color: grey;
+    left: -30px;
+  }
+  .iconsOptions {
+    position: relative;
+    left: -5px;
+  }
+  #riskBox {
+    transform: scale(0.9);
+    left: 70px;
+    top: 0;
+  }
+  #clientBox {
+    transform: scale(0.9);
+    left: 70px;
+    top: 0px;
+  }
+  #finBox {
+    transform: scale(0.9);
+    left: 70px;
+    top: 20px;
+  }
+  #matterBox {
+    transform: scale(0.9);
+    left: 70px;
+    top: 0;
+  }
+  .headingsComplete {
+    position: relative;
+    transform: scale(0.5);
+    left: -280px;
+    top: 25px;
+    width: 800px;
+  }
+  .frameContainer {
+    margin-bottom: 0px;
+  }
+  hr.solid {
+    left: 25px;
+    width: 300px;
+  }
+  .frame {
+    transform: scale(0.32);
+    left: 210px;
+    top: 420px;
+  }
+  .textWhat {
+    padding-left: 0;
+    padding-top: 110px;
+    margin-right: 0;
+    left: 0;
+    top: 0px;
+    height: 400px;
+    width: 350px;
+  }
+  .whatWeDo {
+    font-size: 35px;
+  }
+  .whatDesc {
+    font-size: 25px;
+  }
+  .diamondShape {
+    transform: scale(0.25);
+    position: absolute;
+    top: 70px;
+    left: -50px;
+  }
+  #clientD {
+    margin-left: 50px;
+    margin-top: 28px;
+  }
+  #finD {
+    margin-left: 100px;
+    margin-top: 28px;
+  }
+  #matterD {
+    margin-left: 100px;
+    margin-top: 80px;
+  }
+  #riskD {
+    margin-left: 50px;
+    margin-top: -22px;
+  }
+  .mobileNav {
+    padding-top: 33px;
+    padding-left: 270px;
+    display: inline-flex;
+  }
+  #searchLogo {
+    padding-right: 20px;
+    transform: scale(1);
+    color: grey;
+  }
+  #listLogo {
+    color: rgb(33, 111, 61);
+    transform: scale(1.2);
+  }
+  .navLinks {
+    display: none;
+  }
+  .navigation {
+    display: flex;
+    position: absolute;
+    left: 0px;
+  }
+  .main {
+    flex-wrap: nowrap;
+  }
+  #logo {
+    position: absolute;
+    transform: scale(0.9);
+  }
+  .aboutContainter {
+    height: 700px;
+  }
+  .rcmfContainers {
+    left: -5px;
+  }
+  .headingContainer {
+    left: 10%;
+  }
+  .partnerBox {
+    top: 40%;
+    left: 10%;
+    display: block;
+  }
+  .pHidden {
+    background-color: rgb(33, 111, 61);
+    color: white;
+    position: absolute;
+    font-family: "Source Sans Pro";
+    height: 250px;
+    width: 300px;
+    display: block;
+    opacity: 0;
+  }
+  .pHeading1 {
+    font-size: 40px;
+  }
+  .pHeading2 {
+    font-size: 20px;
+    width: 300px;
+  }
+  .pHiddenH {
+    font-size: 23px;
+    font-weight: 500;
+    font-weight: "Sans";
+    text-transform: uppercase;
+    justify-content: center;
+    position: relative;
+    top: -60px;
+    left: 50px;
+    width: 200px;
+  }
+  .pHiddenT1 {
+    font-size: 13px;
+    position: relative;
+    top: -150px;
+    left: 50px;
+    width: 200px;
+  }
+  .pHiddenT2 {
+    position: relative;
+    top: -110px;
+    text-align: center;
+    font-weight: bold;
+  }
+  #pHiddenT2r2 {
+    top: -125px;
+  }
+  #pHiddenT2dth {
+    top: -115px;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,644 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap");
+.nav { 
+  display: inline-grid;
+  position: fixed;
+  background-color: white;
+  z-index: 99;
+  grid-template-columns: 32% 34% 34%;
+  font-family: "Source Sans Pro";
+  width: 100%;
+  height: 100px;
+  transition: 0.4s;
+}
+.nav .shopContainer {
+  text-align: left;
+}
+.nav .shopContainer .hoverContainer {
+  position: fixed;
+  display: none;
+  transition: 0.4s;
+  height: 550px;
+  width: 100%;
+  background-color: #f9f9f9;
+  z-index: 99;
+  border-bottom: 1px solid lightgray;
+}
+.nav .shopContainer .hoverContainer .hoverGrid {
+  display: grid;
+  max-width: 100%;
+  width: 100%;
+  height: 350px;
+  position: relative;
+  grid-template-columns: 366px 450px 450px 450px;
+}
+.nav .shopContainer .hoverContainer .hoverGrid #merch1 {
+  position: relative;
+  width: 98%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 545px;
+  border: 1px solid lightgray;
+}
+.nav .shopContainer .hoverContainer .hoverGrid #merch2 {
+  position: relative;
+  width: 98%;
+  height: 545px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0px;
+  border: 1px solid lightgray;
+}
+.nav .shopContainer .hoverContainer .hoverGrid #merch3 {
+  position: relative;
+  width: 98%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 545px;
+  border: 1px solid lightgray;
+}
+.nav .shopContainer .hoverContainer .hoverText {
+  position: relative;
+  width: 200px;
+  height: 500px;
+  left: 25px;
+  top: 30px;
+}
+.nav .shopContainer .hoverContainer .hoverText .hoverDesc {
+  position: relative;
+  top: 10px;
+  font-size: 18px;
+  color: #403F4C;
+}
+.nav .shopContainer .hoverContainer .hoverText .hoverTextContainer1 .hoverHeading {
+  position: relative;
+  top: 5px;
+  font-size: 28px;
+  font-weight: bold;
+}
+.nav .shopContainer .hoverContainer .hoverText .hoverTextContainer2 .hoverHeading2 {
+  font-size: 28px;
+  font-weight: bold;
+  position: relative;
+  top: 65px;
+  margin-bottom: 30px;
+}
+.nav .shopContainer .hoverContainer .hoverText .hoverTextContainer2 .hoverDesc2 {
+  position: relative;
+  top: 50px;
+  font-size: 18px;
+  color: #403F4C;
+}
+.nav .shop {
+  line-height: 100px;
+  font-size: 15px;
+  position: relative;
+  left: 25px;
+  font-weight: 300;
+  transition: 0.4s;
+  width: 40px;
+}
+.nav .hoverContainer:hover {
+  display: block;
+  transition: 0.4s;
+}
+
+.toShow:hover {
+  color: lightgray;
+}
+
+.shop:hover + .hoverContainer {
+  display: block;
+  transition: 0.4s;
+}
+
+.navLogoContainer {
+  text-align: center;
+  height: 100px;
+  position: relative;
+  left: -6%;
+}
+.navLogoContainer .navLogo {
+  display: inline-flex;
+  transition: 0.6s;
+}
+.navLogoContainer .navLogo .logo {
+  position: relative;
+  top: 13px;
+  transition: 0.4s;
+}
+.navLogoContainer .navLogo .logNameContainer {
+  position: relative;
+  transition: 0.4s;
+  height: 50px;
+  top: -60px;
+  left: 100px;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Source Sans Pro";
+  justify-content: center;
+  text-align: center;
+}
+.navLogoContainer .navLogo .logNameContainer .logoNameSubtext {
+  line-height: 20px;
+}
+
+.cartContainer {
+  text-align: right;
+  height: 100px;
+}
+.cartContainer .util {
+  transition: 0.4s;
+  text-align: right;
+  line-height: 100px;
+  display: inline-flex;
+  font-size: 15px;
+  position: relative;
+  font-weight: 300;
+  left: -100px;
+  height: 100px;
+}
+.cartContainer .util .search {
+  position: relative;
+}
+.cartContainer .util .search .searchHidden {
+  position: relative;
+  opacity: 0;
+  display: none;
+  transition: 10s;
+  height: 50px;
+  width: 300px;
+  top: -74px;
+  left: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  border-radius: 15px;
+  background-color: lightgray;
+}
+.cartContainer .util .search .searchHidden .searchText {
+  position: relative;
+  height: 100px;
+  left: 0px;
+  top: -28px;
+  width: 280px;
+  text-align: left;
+}
+.cartContainer .util .search .searchHidden .searchIcon {
+  position: relative;
+  top: -122px;
+  left: -15px;
+  height: 50px;
+  width: 300px;
+}
+.cartContainer .util .search .svgIconsearch:hover {
+  transform: scale(1.2);
+}
+.cartContainer .util .search .search:focus + .searchHidden {
+  opacity: 1;
+  display: block;
+}
+.cartContainer .util .search .searchHidden:hover {
+  opacity: 1;
+  display: block;
+}
+.cartContainer .util .login {
+  position: relative;
+  left: 25px;
+  height: 100px;
+}
+.cartContainer .util .cart {
+  position: relative;
+  left: 40px;
+  height: 100px;
+}
+
+.landingImageContainer {
+  width: 100%;
+  height: 870px;
+}
+.landingImageContainer .landingBackground {
+  position: relative;
+  top: 100px;
+  background-color: lightgray;
+  height: 860px;
+}
+.landingImageContainer .landingBackground .landingImageContainer2 .landingImages {
+  position: relative;
+  display: inline-grid;
+  max-width: 100%;
+  width: 33%;
+  height: 840px;
+  top: 10px;
+  left: 10px;
+}
+.landingImageContainer .landingBackground .landingImageContainer2 .landingImages #image1 {
+  position: relative;
+  width: 98%;
+  height: 840px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.landingImageContainer .landingBackground .landingImageContainer2 .landingImages #image2 {
+  position: relative;
+  width: 98%;
+  height: 840px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.landingImageContainer .landingBackground .landingImageContainer2 .landingImages #image3 {
+  position: relative;
+  width: 98%;
+  height: 840px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.clothingOptionsContainer {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  top: 200px;
+}
+.clothingOptionsContainer .clothingOptionsOverall .clothingHeadings {
+  text-align: center;
+  font-family: "Source Sans Pro";
+}
+.clothingOptionsContainer .clothingOptionsOverall .clothingHeadings .clothingHeading {
+  font-size: 28px;
+  font-weight: 700;
+}
+.clothingOptionsContainer .clothingOptionsOverall .clothingHeadings .clothingSubheading {
+  font-size: 22px;
+}
+.clothingOptionsContainer .clothingOptionsOverall .clothingHeadings .clothingSubheading2 {
+  font-size: 13px;
+}
+.clothingOptionsContainer .clothingOptionsOverall .clothingGridContainer {
+  width: 80%;
+  position: relative;
+  top: 100px;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+}
+.clothingOptionsContainer .clothingOptionsOverall .clothingGridContainer .clothingGrid {
+  background: #fff;
+  position: relative;
+  text-align: center;
+  display: inline-grid;
+  width: 350px;
+  justify-content: center;
+}
+.clothingOptionsContainer .clothingOptionsOverall .clothingGridContainer .clothingGrid .clothingText {
+  position: relative;
+  top: 3px;
+  font-family: "Nunito";
+  font-size: 17px;
+}
+.clothingOptionsContainer .clothingOptionsOverall .clothingGridContainer .clothingGrid #tshirt {
+  background: none;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 250px;
+}
+.clothingOptionsContainer .clothingOptionsOverall .clothingGridContainer .clothingGrid #hoodie {
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 250px;
+}
+.clothingOptionsContainer .clothingOptionsOverall .clothingGridContainer .clothingGrid #accessories {
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 250px;
+}
+.clothingOptionsContainer .clothingOptionsOverall .clothingGridContainer .clothingGrid #esports {
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 250px;
+}
+.clothingOptionsContainer .clothingOptionsOverall .clothingGridContainer .clothingGrid:hover {
+  -webkit-animation-name: hoverPop;
+          animation-name: hoverPop;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+.ourPurposeContainer {
+  width: 100%;
+  height: 1000px;
+  margin-top: 200px;
+  background-image: linear-gradient(#403F4C, lightgray);
+}
+.ourPurposeContainer .secondBackground {
+  position: relative;
+  margin: auto;
+  height: 400px;
+  top: 50px;
+  width: 95%;
+}
+.ourPurposeContainer .secondBackground .ourPurposeOverall {
+  width: 70%;
+  margin: auto;
+  position: relative;
+  top: 150px;
+  text-align: center;
+  font-family: "Nunito";
+}
+.ourPurposeContainer .secondBackground .ourPurposeOverall .transitionPurpose {
+  margin: auto;
+  height: 400px;
+  width: 50%;
+}
+.ourPurposeContainer .secondBackground .ourPurposeOverall .transitionPurpose .transitionLogoContainer .transitionLogo {
+  transform: scale(2);
+}
+.ourPurposeContainer .secondBackground .ourPurposeOverall .transitionPurpose .transitionHeadingContainer {
+  position: relative;
+  top: 100px;
+  font-size: 120px;
+  height: 500px;
+  background-image: url("https://media.giphy.com/media/z2POQZ2t8s5Gzp4C7r/giphy-downsized-large.gif");
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  font-size: 120px;
+  margin: 10px 0;
+  font-family: "Source Sans Pro";
+}
+.ourPurposeContainer .secondBackground .ourPurposeOverall .transitionPurpose .transitionHeadingContainer .transitionHeading {
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: bold;
+}
+.ourPurposeContainer .secondBackground .ourPurposeOverall .transitionPurpose .transitionHeadingContainer .transitionSubheading {
+  transition-delay: 5s;
+}
+.ourPurposeContainer .secondBackground .ourPurposeOverall .transitionPurpose .transitionHeadingContainer .transitionSubheading2 {
+  font-weight: bold;
+}
+
+.active1 {
+  -webkit-animation: slideinLeft 5s infinite;
+          animation: slideinLeft 5s infinite;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.active2 {
+  -webkit-animation: slideinTop 4s ease-in;
+          animation: slideinTop 4s ease-in;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@-webkit-keyframes hoverPop {
+  0%, 100% {
+    transform: scale(1);
+  }
+  33% {
+    transform: scale(1.05);
+  }
+  66% {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes hoverPop {
+  0%, 100% {
+    transform: scale(1);
+  }
+  33% {
+    transform: scale(1.05);
+  }
+  66% {
+    transform: scale(0.9);
+  }
+}
+@-webkit-keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes slideinLeft {
+  0% {
+    margin-left: -2500px;
+  }
+  20% {
+    margin-left: -2500px;
+  }
+  35% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+@keyframes slideinLeft {
+  0% {
+    margin-left: -2500px;
+  }
+  20% {
+    margin-left: -2500px;
+  }
+  35% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+@-webkit-keyframes slideinTop {
+  0% {
+    margin-top: -90px;
+  }
+  20% {
+    margin-top: -90px;
+  }
+  35% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+@keyframes slideinTop {
+  0% {
+    margin-top: -90px;
+  }
+  20% {
+    margin-top: -90px;
+  }
+  35% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+@-webkit-keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+  30% {
+    width: 355px;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 355px;
+  }
+}
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+  30% {
+    width: 355px;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 355px;
+  }
+}
+@-webkit-keyframes glitch {
+  2%, 64% {
+    transform: translate(2px, 0) skew(0deg);
+  }
+  4%, 60% {
+    transform: translate(-2px, 0) skew(0deg);
+  }
+  62% {
+    transform: translate(0, 0) skew(5deg);
+  }
+}
+@keyframes glitch {
+  2%, 64% {
+    transform: translate(2px, 0) skew(0deg);
+  }
+  4%, 60% {
+    transform: translate(-2px, 0) skew(0deg);
+  }
+  62% {
+    transform: translate(0, 0) skew(5deg);
+  }
+}
+@-webkit-keyframes fadeinout {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+@keyframes fadeinout {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+.transition {
+  transition: 0.3s;
+}
+
+.grid {
+  background-color: rgb(33, 111, 61);
+  font-family: "Source Sans Pro";
+  height: 350px;
+  width: 400px;
+  opacity: 1;
+  margin: auto;
+}
+
+.tOther {
+  z-index: -1;
+}
+
+.grid:hover .tHidden {
+  display: block;
+  -webkit-animation: fadeinout 1s linear forwards;
+  animation: fadeinout 1s linear forwards;
+}
+
+.TclothingContainer {
+  height: 1000px;
+  width: 100%;
+  background-color: lightgray;
+}
+.TclothingContainer .TclothingOverall {
+  top: 150px;
+  position: relative;
+  height: 700px;
+}
+.TclothingContainer .TclothingOverall .TclothingGrid {
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  display: inline-grid;
+  grid-template-columns: 33% 33% 33%;
+  z-index: 1;
+  row-gap: 100px;
+  max-width: 100%;
+  width: 100%;
+  height: 500px;
+  top: 10px;
+  left: 10px;
+  font-family: "Nunito";
+  font-weight: 600;
+}
+.TclothingContainer .TclothingOverall .TclothingGrid .grid .TclothingTextPrice {
+  font-size: 14px;
+  font-weight: 400;
+}/*# sourceMappingURL=styles.css.map */
