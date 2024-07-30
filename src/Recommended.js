@@ -99,13 +99,6 @@ function Recommended() {
           ))}
         </div>
       </div>
-      {selectedProject && (
-        <ProjectModal
-          isOpen={!!selectedProject}
-          onRequestClose={() => setSelectedProject(null)}
-          project={selectedProject}
-        />
-      )}
     </div>
   );
 }
