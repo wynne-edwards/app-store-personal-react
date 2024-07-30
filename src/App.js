@@ -6,7 +6,7 @@ import NavBar from './NavBar';
 import ResolutionButtons from './ResolutionButtons';
 import TopCharts from './TopCharts';
 import Recommended from './Recommended';
-import Footer from './Footer';
+import FooterN from './FooterNew';
 
 function App() {
   const [mediaClass, setMediaClass] = useState('media-pc');
@@ -31,7 +31,7 @@ function App() {
           <Route path="/projects/scrimBot" element={<ExternalLink url={`${process.env.PUBLIC_URL}/projects/scrimBot/index.html`} />} />
           <Route path="/projects/diggit" element={<ExternalLink url="https://www.figma.com/design/LsY9XY1kwlCVqv1FL6McEE/DiggIt_v2?node-id=89-813&t=IddqOngSrDlbrwtE-1" />} />
         </Routes>
-        <Footer /> {/* Add Footer */}
+        <FooterN /> {/* Add Footer */}
       </div>
     </Router>
   );
