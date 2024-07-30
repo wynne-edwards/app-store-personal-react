@@ -6,7 +6,7 @@ import NavBar from './NavBar';
 import ResolutionButtons from './ResolutionButtons';
 import TopCharts from './TopCharts';
 import Recommended from './Recommended';
-import ExternalLink from './ExternalLink'; // Import the ExternalLink component
+import ExternalLink from './ExternalLink';
 
 function App() {
   const [mediaClass, setMediaClass] = useState('media-pc');
@@ -26,9 +26,9 @@ function App() {
               </>
             }
           />
-          <Route path="/projects/levelUpMerch" element={<ExternalLink url="/projects/levelUpMerch/index.html" />} />
-          <Route path="/projects/emeraldConsulting" element={<ExternalLink url="/projects/emeraldConsulting/index3.html" />} />
-          <Route path="/projects/scrimBot" element={<ExternalLink url="/projects/scrimBot/index.html" />} />
+          <Route path="/projects/levelUpMerch" element={<ExternalLink url={`${process.env.PUBLIC_URL}/projects/levelUpMerch/index.html`} />} />
+          <Route path="/projects/emeraldConsulting" element={<ExternalLink url={`${process.env.PUBLIC_URL}/projects/emeraldConsulting/index3.html`} />} />
+          <Route path="/projects/scrimBot" element={<ExternalLink url={`${process.env.PUBLIC_URL}/projects/scrimBot/index.html`} />} />
           <Route path="/projects/diggit" element={<ExternalLink url="https://www.figma.com/design/LsY9XY1kwlCVqv1FL6McEE/DiggIt_v2?node-id=89-813&t=IddqOngSrDlbrwtE-1" />} />
         </Routes>
       </div>
