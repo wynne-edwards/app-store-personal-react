@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import './reset.css';
 import NavBar from './NavBar';
 import ResolutionButtons from './ResolutionButtons';
 import TopCharts from './TopCharts';
 import Recommended from './Recommended';
+import ExternalLink from './ExternalLink'; // Import the ExternalLink component
 
 function App() {
   const [mediaClass, setMediaClass] = useState('media-pc');
@@ -34,10 +35,5 @@ function App() {
     </Router>
   );
 }
-
-const ExternalLink = ({ url }) => {
-  window.location.href = url;
-  return null;
-};
 
 export default App;
