@@ -9,6 +9,7 @@ import rhodesLogo from "./images/rhodesLogo.png";
 import ProjectModal from './ProjectModal';
 import rhodesBP from './images/rhodesBP.png'
 import rhodesData from './images/rhodesData.png'
+import rhodesVis from './images/rhodesVis.png'
 import './App.css'; // Make sure to import the CSS file
 
 const recommendedData = [
@@ -63,7 +64,7 @@ const recommendedData = [
     category: 'Building a new visualisation tool to show data in a more user friendly way',
     rating: 4.2,
     logo: rhodesLogo,
-    video: googleCalendarBigImg,
+    video: rhodesVis,
     type: 'image'
   },
 ];
